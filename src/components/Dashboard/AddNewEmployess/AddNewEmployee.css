@@ -1,0 +1,11 @@
+.addNewEmpForm{
+    position: relative;
+    top:8%;
+    left: 30%;
+}
+.formInput{
+    width: 35rem;
+}
+.addBtn{
+    width: 10rem;
+}
