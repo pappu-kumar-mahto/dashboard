@@ -1,0 +1,33 @@
+.departmentContainer{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-left: 225px;
+    padding: 10px;
+    position: absolute;
+    top: 8%;
+    left: 20%;
+}
+.addNewEmpBtn{
+    width: 15%;
+    height: 2.5rem;
+    margin: 15px 0;
+    font-weight: 700;
+}
+
+@media only screen and (max-width:800px) {
+    .departmentContainer {
+        left: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+
+    .addNewEmpBtn {
+        width: 35%;
+        height: 2rem;
+        margin: 2px 0;
+    }
+}

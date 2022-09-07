@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './List.css'
 const List = ({employees}) => {
   return (
     <div className='contain-table'>

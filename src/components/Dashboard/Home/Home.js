@@ -1,21 +1,11 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import List from './List'
-import Header from './Header'
+import List from '../List/List'
+import Header from '../Header/Header'
+import './Home.css'
 const Home = ({employees }) => {
-    const divStyle = {
-        fontWeight: 'bold',
-        fontSize: '1.2rem',
-        marginTop: '15px',
-        marginLeft:'95px',
-        padding: '10px',
-        position: 'absolute',
-        top: '11%',
-        left:'20%',
-    }
-
   return (
-      <Container style={divStyle}>
+      <Container  className='homeContainer'>
             <header><Header heading={'Welcome to AdTech Corp'} /></header>
           <Row >
             <header><Header heading={'Employee Management System'} /></header>

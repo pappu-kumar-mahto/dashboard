@@ -1,9 +1,9 @@
 import React from 'react'
-
+import './Header.css'
 const Header = ({heading}) => {
   return (
     <div>
-          <h1>{heading}</h1>
+          <span className='heading'>{heading}</span>
     </div>
   )
 }
