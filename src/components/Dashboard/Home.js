@@ -9,13 +9,15 @@ const Home = ({employees }) => {
         marginTop: '15px',
         marginLeft:'95px',
         padding: '10px',
-        position: 'fixed',
-        top:'10%'
+        position: 'absolute',
+        top: '5%',
+        left:'20%',
     }
 
   return (
-      <Container>
-          <Row style={divStyle}>
+      <Container style={divStyle}>
+            <header><Header heading={'Welcome to AdTech Corp'} /></header>
+          <Row >
             <header><Header heading={'Employee Management System'} /></header>
               <Col><List employees={employees} /></Col>
           </Row>

@@ -1,15 +1,33 @@
-import { NavLink } from 'react-router-dom'
-import './Navbar.css'
-const NavbarComponent = () => {
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Sidebar } from './Sidebar';
+import './Navbar.css';
+import { IconContext } from 'react-icons';
+
+function Navbar() {
+
   return (
-    <div className="navbar">
-      <div className="navMenu">
-        <NavLink to='/' className="navItem"><span>Login</span></NavLink>
-        <NavLink to='/home'className="navItem"><span>Home</span></NavLink>
-        <NavLink to='/employee'className="navItem"><span>Employee</span></NavLink>
-        <NavLink to='/department'className="navItem"><span>Department</span></NavLink>
-      </div>
-    </div>
+    <>
+      <IconContext.Provider value={{ color: '#fff' }}>
+        <nav className='nav-menu active'>
+          <ul className='nav-menu-items'>
+            <li className='navbar-toggle'>
+            </li>
+            {Sidebar.map((item, index) => {
+              return (
+                <li key={index} className={item.cName}>
+                  <Link to={item.path}>
+                    {item.icon}
+                    <span>{item.title}</span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      </IconContext.Provider>
+    </>
   );
-};
-export default NavbarComponent;
+}
+
+export default Navbar;

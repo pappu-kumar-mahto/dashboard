@@ -19,6 +19,9 @@ const Department = ({ employees }) => {
     marginTop: '15px',
     marginLeft:'225px',
     padding: '10px',
+    position: 'absolute',
+    top: '5%',
+    left:'12%',
 }
 
   const addNewEmployee = () => {
