@@ -21,7 +21,7 @@ const EmployeeList = ({employees }) => {
     marginLeft:'225px',
     padding: '10px',
     position: 'absolute',
-    top: '5%',
+    top: '8%',
     left:'12%',
 }
     

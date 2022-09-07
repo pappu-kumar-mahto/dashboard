@@ -10,7 +10,7 @@ const Home = ({employees }) => {
         marginLeft:'95px',
         padding: '10px',
         position: 'absolute',
-        top: '5%',
+        top: '11%',
         left:'20%',
     }
 
