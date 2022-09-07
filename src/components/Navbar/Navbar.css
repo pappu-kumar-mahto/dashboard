@@ -1,0 +1,17 @@
+.navMenu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0rem;
+    left: 4rem;
+    margin-right: 10px;
+    align-items: flex-start;
+    margin-top: 290px;
+}
+.navItem{
+    text-decoration: none;
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}

@@ -66,7 +66,7 @@ const Login = () => {
             onChange={(event)=> setPassword(event.target.value)}
           />
       </Form.Group>
-      <Button variant="primary" type="submit" onClick={onSubmit}>
+      <Button variant="primary" type="submit" onClick={onSubmit} className='loginBtn'>
         Login
       </Button>
       </Form>

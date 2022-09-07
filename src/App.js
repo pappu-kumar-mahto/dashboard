@@ -1,6 +1,6 @@
 import React from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import NavBar from './components/Navbar'
+import NavBar from './components/Navbar/Navbar'
 import Home from './components/Dashboard/Home'
 import AddEmployee from './components/Dashboard/AddNewEmployess/AddEmployee'
 import EmployeeList from './components/Dashboard/EmployeeList'

@@ -11,11 +11,21 @@ const Department = ({ employees }) => {
     margin: "15px 0",
     fontWeight: 700,
   };
+
+
+  const divStyle = {
+    fontWeight: 'bold',
+    fontSize: '1.2rem',
+    marginTop: '15px',
+    marginLeft:'225px',
+    padding: '10px',
+}
+
   const addNewEmployee = () => {
     navigate("/addnewemployee");
   };
   return (
-    <div className="container">
+    <div className="container" style={divStyle}>
       <Header heading={"Department Details"} />
       <Button style={addNewEmpBtn} variant="secondary" onClick={addNewEmployee}>
         Add New Department
