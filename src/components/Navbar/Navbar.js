@@ -1,16 +1,17 @@
-import React,{useState} from 'react';
+import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { Sidebar } from './Sidebar';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
-
+import { useDispatch,useSelector } from 'react-redux'
+import {toggleState } from '../../features/toggleSlice'
 function Navbar() {
-
-  const [sidebar, setSidebar] = useState(false)
+  const dispatch = useDispatch()
+  const {status} = useSelector((state)=> state.toggle)
   
-  const showSidebar = () => setSidebar(!sidebar)
+  const showSidebar = () => dispatch(toggleState())
 
   return (
     <>
@@ -21,7 +22,7 @@ function Navbar() {
           </Link>
         </div>
 
-        <nav className={sidebar ? 'nav-menu active': 'nav-menu'}>
+        <nav className={status ? 'nav-menu active': 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>
             <li className='navbar-toggle'>
               <Link to='#' className='menu-bar'>
