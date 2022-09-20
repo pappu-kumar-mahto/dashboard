@@ -3,10 +3,10 @@ import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { Sidebar } from './Sidebar';
-import './Navbar.css';
 import { IconContext } from 'react-icons';
 import { useDispatch,useSelector } from 'react-redux'
 import {toggleState } from '../../features/toggleSlice'
+import './Navbar.css';
 function Navbar() {
   const dispatch = useDispatch()
   const {status} = useSelector((state)=> state.toggle)

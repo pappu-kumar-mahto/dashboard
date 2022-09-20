@@ -1,0 +1,8 @@
+export { default as AddEmployee } from './Dashboard/AddNewEmployess/AddEmployee.js'
+export { default as Department } from './Dashboard/Department/Department.js'
+export { default as EmployeeList } from './Dashboard/Employee/EmployeeList.js'
+export { default as Header } from './Dashboard/Header/Header.js'
+export { default as Home } from './Dashboard/Home/Home.js'
+export { default as List } from './Dashboard/List/List.js'
+export { default as Login } from './Login/Login.js'
+export { default as Navbar } from './Navbar/Navbar.js'

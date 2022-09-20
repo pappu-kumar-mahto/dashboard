@@ -1,14 +1,9 @@
 import React from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import Home from './components/Dashboard/Home/Home'
-import AddEmployee from './components/Dashboard/AddNewEmployess/AddEmployee'
-import EmployeeList from './components/Dashboard/Employee/EmployeeList'
-import Department from './components/Dashboard/Department/Department'
-import Login from './components/Login/Login'
+import {AddEmployee,EmployeeList,Department,Home,Login,Navbar} from './components'
 import { dummyData } from './utils/dummyData'
-import Navbar from './components/Navbar/Navbar'
-import 'bootstrap/dist/css/bootstrap.min.css';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const App = () => {
