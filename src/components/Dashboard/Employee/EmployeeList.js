@@ -1,17 +1,21 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Button } from "react-bootstrap";
+import { useSelector } from "react-redux";
+import { Container, Button } from "react-bootstrap";
 import List from "../List/List";
 import Header from "../Header/Header";
 import "./Employee.css";
 const EmployeeList = ({ employees }) => {
+  const { loginStatus: status } = useSelector((state) => state.toggle);
+
   const navigate = useNavigate();
 
   const addNewEmployee = () => {
     navigate("/addnewemployee");
   };
   return (
-    <div className="container EmployeeContainer">
+  <>
+      {status ? (<div className="container EmployeeContainer">
       <Header heading={"Employee List"} />
       <Button
         className="addNewEmpBtn"
@@ -21,7 +25,9 @@ const EmployeeList = ({ employees }) => {
         Add New Employee
       </Button>
       <List employees={employees} />
-    </div>
+    </div>) : (<Container className="EmployeeContainer"><Header heading={"Need to Login first"} /></Container>)}
+  </>
+    
   );
 };
 

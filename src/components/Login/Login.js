@@ -4,8 +4,14 @@ import Swal from 'sweetalert2';
 import { ToastContainer, toast, Slide } from "react-toastify";
 import { Form, Button } from 'react-bootstrap'
 import './Login.css'
-import "react-toastify/dist/ReactToastify.css";
+import "react-toastify/dist/ReactToastify.css"
+import { useDispatch, useSelector } from 'react-redux'
+import { loginState } from '../../features/toggleSlice';
+
 const Login = () => {
+  const dispatch = useDispatch()
+  const {loginStatus} = useSelector((state) => state.toggle)
+  console.log(loginStatus)
   const navigate = useNavigate()
   const[email, setEmail] = useState('')
   const[password, setPassword] = useState('')
@@ -40,6 +46,7 @@ const Login = () => {
         showConfirmButton: false,
         timer: 2500
       });
+      dispatch(loginState())
       navigate('/home')
   }
   }

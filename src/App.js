@@ -2,7 +2,6 @@ import React from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import {AddEmployee,EmployeeList,Department,Home,Login,Navbar} from './components'
 import { dummyData } from './utils/dummyData'
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 

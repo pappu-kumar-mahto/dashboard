@@ -9,7 +9,7 @@ import {toggleState } from '../../features/toggleSlice'
 import './Navbar.css';
 function Navbar() {
   const dispatch = useDispatch()
-  const {status} = useSelector((state)=> state.toggle)
+  const {toggleStatus: status} = useSelector((state)=> state.toggle)
   
   const showSidebar = () => dispatch(toggleState())
 
